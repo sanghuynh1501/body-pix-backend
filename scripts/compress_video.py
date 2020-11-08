@@ -13,7 +13,7 @@ for filename in os.listdir(IMAGE_RESULT):
 
 # filenames.sort()
 
-for i in range(659):
+for i in range(75):
     filename = str(i) + '.png'
     print('filename ', filename)
     img = cv2.imread(IMAGE_RESULT + filename)

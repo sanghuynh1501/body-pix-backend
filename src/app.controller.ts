@@ -46,7 +46,7 @@ export class AppController {
       } else {
         // call class Resize
         const fileUpload = new Resize(folderName, file.originalname.split('_')[1]);
-        const filename = await fileUpload.save(file.buffer);
+        fileUpload.save(file.buffer);
       }
     }
     return "success";
